@@ -36,7 +36,7 @@ def programa_principal():
         rnc = input("Por favor, ingrese su RNC de 10 dígitos: ")
         if len(rnc) == 10 and rnc.isdigit():
             caja.rnc = rnc
-            print("RNC registrado correctamente.")
+            print("RNC registrado correctamente.") 
         else:
             print("Error: el RNC debe ser un número de 10 dígitos.")
             return
@@ -59,6 +59,31 @@ def programa_principal():
             print("Opción inválida. Intente de nuevo.")
 
 if __name__ == "__main__":
-    programa_principal()
+    programa_principal() 
 
 
+
+#                 (DIAGRAMA DE FLUJO)
+
+ #           Inicio
+ #           |
+ #           Crear objeto CajaRegistradora
+ #           |
+ #           Preguntar si se desea generar un comprobante fiscal
+ #           |
+ #           Si se desea generar un comprobante fiscal
+ #           |   Pedir RNC
+ #           |   Si el RNC es válido, registrarlo
+ #           |   Si el RNC no es válido, mostrar mensaje de error y terminar programa
+ #           |
+ #           Mientras el usuario no seleccione "Salir"
+ #           |   Preguntar al usuario qué acción desea realizar
+ #           |   Si se selecciona "Agregar producto"
+ #           |   |   Pedir el precio del producto
+ #           |   |   Si el precio es un número, agregar el producto
+ #           |   |   Si el precio no es un número, mostrar mensaje de error
+ #           |   Si se selecciona "Imprimir total", imprimir el subtotal, ITBIS y total
+ #           |   Si se selecciona "Salir", terminar programa
+ #           |   Si se selecciona una opción inválida, mostrar mensaje de error
+ #           |
+ #           Fin 
