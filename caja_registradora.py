@@ -87,3 +87,42 @@ if __name__ == "__main__":
  #           |   Si se selecciona una opción inválida, mostrar mensaje de error
  #           |
  #           Fin 
+
+
+#                   (DIAGRAMA CASO DE USO) 
+
+#                          Usuario
+#                            |
+#                            v
+#                     Iniciar programa
+#                            |
+#                            v
+#           Crear instancia de CajaRegistradora
+#                            |
+#                            v
+#       Preguntar si desea generar comprobante fiscal
+#                            |
+#          +-----------------+-----------------+
+#          |                                     |
+#          v                                     v
+#       Sí desea                             No desea
+#  generar comprobante                  generar comprobante
+#          |                                     |
+#          v                                     v
+#  Ingresar RNC válido                    No ingresar RNC
+#          |                                     |
+#          v                                     v
+#   +------+-------+                    +--------+-------+
+#   |              |                    |                |
+#   v              v                    v                v
+#Agregar        Imprimir           Terminar        Opción
+#producto         total             programa       inválida
+#   |              |                  |                |
+#   v              v                  v                v
+#Ingresar      Mostrar total         Fin          Mostrar error
+#precio           CajaRegistradora               y volver a menú
+#   |
+#   v
+# Mostrar mensaje de
+#  error si precio
+#   es inválido
